@@ -310,6 +310,11 @@
       "packageName": "with-sand-dance",
       "projectFolder": "notes/with-sand-dance",
       "reviewCategory": "prototypes"
+    },
+    {
+      "packageName": "top",
+      "projectFolder": "top",
+      "reviewCategory": "prototypes"
     }
   ]
 }

@@ -27,6 +27,10 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "npm-run-all",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "react",
       "allowedCategories": [ "prototypes" ]
     },
@@ -36,6 +40,38 @@
     },
     {
       "name": "react-scripts",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup-plugin-commonjs",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup-plugin-livereload",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup-plugin-node-resolve",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup-plugin-svelte",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "rollup-plugin-terser",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "sirv-cli",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "svelte",
       "allowedCategories": [ "prototypes" ]
     },
     {
