@@ -1,0 +1,22 @@
+{
+  "name": "elm-webgl",
+  "version": "0.0.1",
+  "description": "elm webgl",
+  "engines" : { 
+    "node" : ">=10.0.0" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reactor": "elm reactor",
+    "build": "elm make src/Main.elm --optimize --output=public/elm.js",
+    "make": "elm make src/Main.elm --output=public/elm.js",
+    "dev": "elm-live src/Main.elm --open --start-page=public/index.html -- --output=public/elm.js",
+    "postinstall": "elm install"
+  },
+  "author": "satotake",
+  "license": "MIT",
+  "devDependencies": {
+    "elm": "^0.19.0-no-deps",
+    "elm-live": "^4.0.0-rc.1"
+  }
+}

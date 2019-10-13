@@ -61,3 +61,7 @@ temp
 # Rush files
 common/temp/**
 .rush/temp/**
+
+# lock files
+package-lock.json
+yarn.lock
