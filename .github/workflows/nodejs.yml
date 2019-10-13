@@ -20,12 +20,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+      env: # Or as an environment variable
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: npm install, build, and test
       run: |
         npm install
         npm run ci:install
         npm run ci:rebuild
         npm run extract
-        npm run deploy
+        npm run ghpages
       env:
         CI: true

@@ -15,7 +15,7 @@
     "ci:install": "node common/scripts/install-run-rush.js install",
     "ci:rebuild": "node common/scripts/install-run-rush.js rebuild --verbose",
     "extract": "ts-node scripts/extract-targets.ts --dist=dist",
-    "deploy": "gh-pages -d dist"
+    "ghpages": "ts-node scripts/ghpages.ts"
   },
   "repository": {
     "type": "git",
