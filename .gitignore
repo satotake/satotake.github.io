@@ -65,3 +65,4 @@ common/temp/**
 # lock files
 package-lock.json
 yarn.lock
+dist/
