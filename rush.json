@@ -145,12 +145,11 @@
   //    * Designate categories with whatever granularity is appropriate for your review process,
   //    * or you could just have a single category called "default".
   //    */
-  //   "reviewCategories": [
-  //     // Some example categories:
-  //     "production", // projects that ship to production
-  //     "tools",      // non-shipping projects that are part of the developer toolchain
-  //     "prototypes"  // experiments that should mostly be ignored by the review process
-  //   ],
+     "reviewCategories": [
+       "production",
+       "tools",
+       "prototypes"
+     ],
   // 
   //   /**
   //    * A list of NPM package scopes that will be excluded from review.
@@ -304,7 +303,8 @@
   "projects": [
     {
       "packageName": "elm-webgl",
-      "projectFolder": "notes/elm-webgl"
+      "projectFolder": "notes/elm-webgl",
+      "reviewCategory": "prototypes"
     }
   ]
 }
