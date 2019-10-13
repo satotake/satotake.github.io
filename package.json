@@ -9,7 +9,6 @@
     "build": "rush build",
     "change": "rush change",
     "changev": "rush change -v",
-    "postinstall": "rush update",
     "ci:changev": "node common/scripts/install-run-rush.js change -v",
     "ci:install": "node common/scripts/install-run-rush.js install",
     "ci:rebuild": "node common/scripts/install-run-rush.js rebuild --verbose",

@@ -1,6 +1,7 @@
 ### Setup
 ```
 npm run install
+npm run u
 ```
 
 ### Build
