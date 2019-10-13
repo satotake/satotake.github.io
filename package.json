@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "u": "rush update",
+    "update": "rush update --full",
     "build": "rush build",
+    "check": "rush check",
     "change": "rush change",
     "changev": "rush change -v",
     "ci:changev": "node common/scripts/install-run-rush.js change -v",
