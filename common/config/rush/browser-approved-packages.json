@@ -1,0 +1,46 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@types/jest",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "@types/node",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "@types/react",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "@types/react-dom",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "elm",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "elm-live",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "react-scripts",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "prototypes" ]
+    }
+  ]
+}

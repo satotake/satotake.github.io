@@ -132,19 +132,19 @@
    * The approvals are tracked in two config files "browser-approved-packages.json"
    * and "nonbrowser-approved-packages.json".  See the Rush documentation for details.
    */
-  // "approvedPackagesPolicy": {
-  //   /**
-  //    * The review categories allow you to say for example "This library is approved for usage
-  //    * in prototypes, but not in production code."
-  //    *
-  //    * Each project can be associated with one review category, by assigning the "reviewCategory" field
-  //    * in the "projects" section of rush.json.  The approval is then recorded in the files
-  //    * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
-  //    * which are automatically generated during "rush update".
-  //    *
-  //    * Designate categories with whatever granularity is appropriate for your review process,
-  //    * or you could just have a single category called "default".
-  //    */
+  "approvedPackagesPolicy": {
+    /**
+     * The review categories allow you to say for example "This library is approved for usage
+     * in prototypes, but not in production code."
+     *
+     * Each project can be associated with one review category, by assigning the "reviewCategory" field
+     * in the "projects" section of rush.json.  The approval is then recorded in the files
+     * "common/config/rush/browser-approved-packages.json" and "nonbrowser-approved-packages.json"
+     * which are automatically generated during "rush update".
+     *
+     * Designate categories with whatever granularity is appropriate for your review process,
+     * or you could just have a single category called "default".
+     */
      "reviewCategories": [
        "production",
        "tools",
@@ -158,7 +158,7 @@
   //    * are also approved.
   //    */
   //   // "ignoredNpmScopes": [ "@types" ]
-  // },
+  },
 
   /**
    * If you use Git as your version control system, this section has some additional
@@ -304,6 +304,11 @@
     {
       "packageName": "elm-webgl",
       "projectFolder": "notes/elm-webgl",
+      "reviewCategory": "prototypes"
+    },
+    {
+      "packageName": "with-sand-dance",
+      "projectFolder": "notes/with-sand-dance",
       "reviewCategory": "prototypes"
     }
   ]
