@@ -1,13 +1,13 @@
 import * as ghpages from 'gh-pages';
 import * as fetch from 'node-fetch';
 
-const { GITHUB_ACTOR, GITHUB_REPOSITORY, GITHUB_TOKEN } = process.env;
+const { GITHUB_ACTOR, GITHUB_REPOSITORY, GITHUB_TOKEN, PERSONAL_TOKEN } = process.env;
 const BUILD_REQ_URL = `https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds`;
 
 const opt = {
     method: 'POST',
     headers: {
-        Authorization: `token ${GITHUB_TOKEN}`,
+        Authorization: `token ${PERSONAL_TOKEN}`,
         Accept: 'application/vnd.github.v3+json',
         // https://developer.github.com/v3/#current-version
     },
