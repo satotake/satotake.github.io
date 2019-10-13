@@ -7,4 +7,4 @@ ghpages.publish('dist', {
         name: 'Github Action',
         email: 'action@github.com'
     }
-}, () => { });
+}, console.log);
