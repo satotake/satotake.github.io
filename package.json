@@ -1,0 +1,37 @@
+{
+  "name": "satotake.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "u": "rush update",
+    "update": "rush update --full",
+    "build": "rush build",
+    "check": "rush check",
+    "change": "rush change",
+    "changev": "rush change -v",
+    "ci:changev": "node common/scripts/install-run-rush.js change -v",
+    "ci:install": "node common/scripts/install-run-rush.js install",
+    "ci:rebuild": "node common/scripts/install-run-rush.js rebuild --verbose",
+    "extract": "ts-node scripts/extract-targets.ts --dist=dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satotake/satotake.github.io.git"
+  },
+  "author": "satotake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satotake/satotake.github.io/issues"
+  },
+  "homepage": "https://satotake.github.io",
+  "devDependencies": {
+    "@microsoft/node-core-library": "^3.15.1",
+    "@microsoft/rush": "^5.15.1",
+    "gh-pages": "^2.1.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
