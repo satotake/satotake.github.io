@@ -33,6 +33,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://satotake.github.io/with-sand-dance",
   "config": {
     "rushTarget": "build"
   }

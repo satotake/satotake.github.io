@@ -1,0 +1,27 @@
+{
+  "name": "satotake.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "u": "rush update",
+    "build": "rush build",
+    "postinstall": "rush u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satotake/satotake.github.io.git"
+  },
+  "author": "satotake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satotake/satotake.github.io/issues"
+  },
+  "homepage": "https://satotake.github.io",
+  "devDependencies": {
+    "@microsoft/rush": "^5.15.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
