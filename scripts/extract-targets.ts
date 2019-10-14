@@ -27,7 +27,7 @@ const main = (dist: string) => {
     const { projects } = JsonFile.load('./rush.json');
     const projectFolders = projects.map((p) => p.projectFolder);
     console.log('======= copied =======')
-    projectFolders.forEach(findAndCopy);
+    projectFolders.filter((p) => !p.startsWith('tools/')).forEach(findAndCopy);
     console.log('======================')
 };
 
