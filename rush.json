@@ -315,6 +315,11 @@
       "packageName": "top",
       "projectFolder": "top",
       "reviewCategory": "prototypes"
+    },
+    {
+      "packageName": "project-data",
+      "projectFolder": "tools/project-data",
+      "reviewCategory": "prototypes"
     }
   ]
 }

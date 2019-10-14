@@ -3,6 +3,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@fullhuman/postcss-purgecss",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "@microsoft/node-core-library",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "@types/jest",
       "allowedCategories": [ "prototypes" ]
     },
@@ -19,6 +27,10 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "autoprefixer",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "elm",
       "allowedCategories": [ "prototypes" ]
     },
@@ -27,7 +39,19 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "jju",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "npm-run-all",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "postcss",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "postcss-import",
       "allowedCategories": [ "prototypes" ]
     },
     {
@@ -59,6 +83,10 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "rollup-plugin-postcss",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "rollup-plugin-svelte",
       "allowedCategories": [ "prototypes" ]
     },
@@ -72,6 +100,10 @@
     },
     {
       "name": "svelte",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "tailwindcss",
       "allowedCategories": [ "prototypes" ]
     },
     {
