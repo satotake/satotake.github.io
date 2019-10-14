@@ -17,7 +17,7 @@ const findAndCopy = (dist: string) => (p: string) => {
     }
 
     const sourcePath = `${p}/${rushTarget}`;
-    const destinationPath = path.join(dist, ...sourcePath.split('/').slice(0, -1))
+    const destinationPath = path.join(dist, ...sourcePath.split('/').slice(sourcePath.startsWith('top/') ? 1 : 0, -1))
     FileSystem.copyFile({ sourcePath, destinationPath });
     console.log(`* ${sourcePath} => ${destinationPath}`);
 }
