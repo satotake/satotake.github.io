@@ -1,3 +1,2 @@
-import {JsonFile} from '@microsoft/node-core-library';
-
-export const rushData = JsonFile.load('../rush.json');
+import {noteData} from '../data/notes';
+export const projectData = {notes: noteData};

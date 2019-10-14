@@ -7,13 +7,18 @@
   },
   "main": "dist/src/index.js",
   "scripts": {
+    "prebuild": "ts-node scripts/getNoteData",
     "build": "tsc",
-    "start": "tsc --incremental && node dist/scripts/getRushData.js && node dist/src/index.js"
+    "prestart": "npm run prebuild",
+    "start": "tsc --incremental && node dist/src/index.js"
   },
   "author": "satotake",
   "license": "MIT",
   "devDependencies": {
     "@microsoft/node-core-library": "^3.15.1",
+    "@types/stringify-object": "^3.2.0",
+    "stringify-object": "^3.3.0",
+    "ts-node": "^8.4.1",
     "typescript": "3.6.4"
   }
 }
