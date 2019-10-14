@@ -2,7 +2,11 @@ import * as ghpages from 'gh-pages';
 import * as fetch from 'node-fetch';
 
 const { GITHUB_ACTOR, GITHUB_REPOSITORY, GITHUB_TOKEN, PERSONAL_TOKEN } = process.env;
-const BUILD_REQ_URL = `https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds`;
+const GITHUB_API = {
+    root: 'https://api.github.com',
+    pageBuild: '/repos/satotake/satotake.github.io/pages/builds',
+};
+const BUILD_REQ_URL = GITHUB_API.root + GITHUB_API.pageBuild;
 
 const opt = {
     method: 'POST',
@@ -25,11 +29,13 @@ ghpages.publish('dist', {
 
     if (err) {
         console.log(err);
+        return;
     }
 
     fetch(BUILD_REQ_URL, opt)
     .then(r => r.text())
     .then(console.log)
+    .catch(console.error)
     ;
 });
 
