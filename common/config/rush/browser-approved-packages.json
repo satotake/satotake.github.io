@@ -27,6 +27,10 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "@types/stringify-object",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "autoprefixer",
       "allowedCategories": [ "prototypes" ]
     },
@@ -52,6 +56,10 @@
     },
     {
       "name": "postcss-import",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "project-data",
       "allowedCategories": [ "prototypes" ]
     },
     {
@@ -99,11 +107,19 @@
       "allowedCategories": [ "prototypes" ]
     },
     {
+      "name": "stringify-object",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
       "name": "svelte",
       "allowedCategories": [ "prototypes" ]
     },
     {
       "name": "tailwindcss",
+      "allowedCategories": [ "prototypes" ]
+    },
+    {
+      "name": "ts-node",
       "allowedCategories": [ "prototypes" ]
     },
     {

@@ -9,10 +9,10 @@ dependencies:
   '@types/node': 12.7.12
   '@types/react': 16.9.5
   '@types/react-dom': 16.9.1
+  '@types/stringify-object': 3.2.0
   autoprefixer: 9.6.5
   elm: 0.19.0-no-deps
   elm-live: 4.0.1
-  jju: 1.4.0
   npm-run-all: 4.1.5
   postcss: 7.0.18
   postcss-import: 12.0.1
@@ -27,8 +27,11 @@ dependencies:
   rollup-plugin-svelte: 5.1.0
   rollup-plugin-terser: 4.0.4
   sirv-cli: 0.4.4
+  stringify-object: 3.3.0
   svelte: 3.12.1
   tailwindcss: 1.1.2
+  ts-node: 8.4.1
+  typescript: 3.6.4
 packages:
   /@babel/code-frame/7.5.5:
     dependencies:
@@ -2073,6 +2076,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
+  /@types/stringify-object/3.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-VUrjNFiyn1KcNV6nDf2L12pOfNLBQsUUvlniQymEwHCCX7XMa2OWIjr9Fgr1RoDWeCcfj7sMZFB6B3FfGD+Jdw==
   /@types/yargs-parser/13.1.0:
     dev: false
     resolution:
@@ -2459,6 +2466,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
+  /arg/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha512-SlmP3fEA88MBv0PypnXZ8ZfJhwmDeIE3SP71j37AiXQBXYosPV0x6uISAaHYSlSVhmHOVkomen0tbGk6Anlebw==
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
@@ -4190,6 +4201,12 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-Dj6Wk3tWyTE+Fo1rW8v0Xhwk80um6yFYKbuAxc9c3EZxIHFDYwbi34Uk42u1CdnIiVorvt4RmlSDjIPyzGC2ew==
+  /diff/4.0.1:
+    dev: false
+    engines:
+      node: '>=0.3.1'
+    resolution:
+      integrity: sha512-s2+XdvhPCOF01LRQBC8hf4vhbVmI2CGS5aZnxLJlT5FtdhPCDFq80q++zK2KlrVorVDdL5BOGZ/VfLrVtYNF+Q==
   /diffie-hellman/5.0.3:
     dependencies:
       bn.js: 4.11.8
@@ -7272,6 +7289,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==
+  /make-error/1.3.5:
+    dev: false
+    resolution:
+      integrity: sha512-c3sIjNUow0+8swNwVpqoH4YCShKNFkMaw6oH1mNS2haDZQqkeZFlHS3dhoeEbKKmJB4vXpJucU6oH75aDYeE9g==
   /makeerror/1.0.11:
     dependencies:
       tmpl: 1.0.4
@@ -9531,6 +9552,19 @@ packages:
       react: ^16.0.0
     resolution:
       integrity: sha512-kWGDcH3ItJK4+6Pl9DZB16BXYAZyrYQItU4OMy0jAkv5aNqc+mAKb4TpFtAteI6TJZu+9ZlNhaeNQSVQDHJzkw==
+  /react-dom/16.10.2/react@16.10.2:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+      react: 16.10.2
+      scheduler: 0.16.2
+    dev: false
+    id: registry.npmjs.org/react-dom/16.10.2
+    peerDependencies:
+      react: ^16.0.0
+    resolution:
+      integrity: sha512-kWGDcH3ItJK4+6Pl9DZB16BXYAZyrYQItU4OMy0jAkv5aNqc+mAKb4TpFtAteI6TJZu+9ZlNhaeNQSVQDHJzkw==
   /react-error-overlay/6.0.3:
     dev: false
     resolution:
@@ -11244,6 +11278,38 @@ packages:
     dev: false
     resolution:
       integrity: sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
+  /ts-node/8.4.1:
+    dependencies:
+      arg: 4.1.1
+      diff: 4.0.1
+      make-error: 1.3.5
+      source-map-support: 0.5.13
+      yn: 3.1.1
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    peerDependencies:
+      typescript: '>=2.0'
+    resolution:
+      integrity: sha512-5LpRN+mTiCs7lI5EtbXmF/HfMeCjzt7DH9CZwtkr6SywStrNQC723wG+aOWFiLNn7zT3kD/RnFqi3ZUfr4l5Qw==
+  /ts-node/8.4.1/typescript@3.6.4:
+    dependencies:
+      arg: 4.1.1
+      diff: 4.0.1
+      make-error: 1.3.5
+      source-map-support: 0.5.13
+      typescript: 3.6.4
+      yn: 3.1.1
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    id: registry.npmjs.org/ts-node/8.4.1
+    peerDependencies:
+      typescript: '>=2.0'
+    resolution:
+      integrity: sha512-5LpRN+mTiCs7lI5EtbXmF/HfMeCjzt7DH9CZwtkr6SywStrNQC723wG+aOWFiLNn7zT3kD/RnFqi3ZUfr4l5Qw==
   /ts-pnp/1.1.4:
     dev: false
     engines:
@@ -12075,6 +12141,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-/is78VKbKs70bVZH7w4YaZea6xcJWOAwkhbR0CFuZBmYtfTYF0xjGJF43AYd8g2Uii1yJwmS5GR2vBmrc32sbg==
+  /yn/3.1.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
   /z-schema/3.18.4:
     dependencies:
       lodash.get: 4.4.2
@@ -12099,11 +12171,14 @@ packages:
   'file:projects/project-data.tgz':
     dependencies:
       '@microsoft/node-core-library': 3.15.1
+      '@types/stringify-object': 3.2.0
+      stringify-object: 3.3.0
+      ts-node: /ts-node/8.4.1/typescript@3.6.4
       typescript: 3.6.4
     dev: false
     name: '@rush-temp/project-data'
     resolution:
-      integrity: sha512-r/JzwxrN9Bvl2DyeinK1ZJBp0u8D5tLJMTDcLAiaeHPUqmuLuMD3Asfe3I8AL2qEfiH/b8jtIAOl2eKk8LGrug==
+      integrity: sha512-ZSswDMTWx4KOHbQ8oGb6Ap/7n/Vyp8c2/F9T84r7J94AuNs48tzkxnHBzSvgod3rX87ag+aHkP6pDW3pAaPqPw==
       tarball: 'file:projects/project-data.tgz'
     version: 0.0.0
   'file:projects/top.tgz':
@@ -12127,7 +12202,7 @@ packages:
     dev: false
     name: '@rush-temp/top'
     resolution:
-      integrity: sha512-knIvL42wlDwVbEC6isdAoBeoPY5OEBEjLubbFkrCymuRW0RFVFHeM9Mb61Vc6MqN/K+wUrp/11IwCly4D7tnyw==
+      integrity: sha512-S3zp/ot8xulKIXVt0Chjof8LtCHzSLEBKt6zxYdxtRyMFmC9qUabH8ZCqrqStwSxtHcWzII4+q/Sen+suMr4GQ==
       tarball: 'file:projects/top.tgz'
     version: 0.0.0
   'file:projects/with-sand-dance.tgz':
@@ -12137,7 +12212,7 @@ packages:
       '@types/react': 16.9.5
       '@types/react-dom': 16.9.1
       react: 16.10.2
-      react-dom: 16.10.2
+      react-dom: /react-dom/16.10.2/react@16.10.2
       react-scripts: 3.2.0
       typescript: 3.6.4
     dev: false
@@ -12160,10 +12235,10 @@ specifiers:
   '@types/node': 12.7.12
   '@types/react': 16.9.5
   '@types/react-dom': 16.9.1
+  '@types/stringify-object': ^3.2.0
   autoprefixer: ^9.6.5
   elm: ^0.19.0-no-deps
   elm-live: ^4.0.0-rc.1
-  jju: ^1.4.0
   npm-run-all: ^4.1.5
   postcss: ^7.0.18
   postcss-import: ^12.0.1
@@ -12178,5 +12253,8 @@ specifiers:
   rollup-plugin-svelte: ^5.0.3
   rollup-plugin-terser: ^4.0.4
   sirv-cli: ^0.4.4
+  stringify-object: ^3.3.0
   svelte: ^3.0.0
   tailwindcss: ^1.1.2
+  ts-node: ^8.4.1
+  typescript: 3.6.4
